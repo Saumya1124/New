@@ -40,8 +40,12 @@
         document.title='DOM'
         console.log(document.links);
         console.log(document.images);
+
+        //  elements by id
         var titleBorder = document.getElementById('main-header');
         titleBorder.style.borderBottom = 'solid 2px black';
+
+        // elements by classname
         var items = document.getElementsByClassName('title');
         console.log(items);
         items[0].style.color = 'green';
@@ -58,6 +62,27 @@
         console.log(li)
         for (var i=0 ; i<li.length;i++){
           console.log(li[i].innerText)
+        }
+
+        // get elements by querySelector
+        var list = document.querySelector('li:nth-child(2)')
+        console.log(list)
+        list.style.backgroundColor = 'yellow'
+
+        var list = document.querySelector('li:nth-child(3)')
+        console.log(list)
+        list.style.display = 'none'
+
+
+        // get elements by querySelectorAll
+
+        var list1 = document.querySelectorAll('li')
+        console.log(list1)
+        list1[1].style.color = 'green'
+
+        var odd = document.querySelectorAll('li:nth-child(odd)')
+        for (var i = 0; i<odd.length; i++){
+          odd[i].style.backgroundColor = 'green'
         }
         
 
