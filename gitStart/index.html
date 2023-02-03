@@ -26,6 +26,7 @@
       <li class="list-group-item">Item 2</li>
       <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
+      <li>Hi</li>
     </ul>
    </div>
   </div>
@@ -51,6 +52,14 @@
         for (var i = 0; i<listItem.length; i++){
             listItem[i].style.fontWeight='bold'
         }
+
+        // get elements by tag
+        var li = document.getElementsByTagName('li')
+        console.log(li)
+        for (var i=0 ; i<li.length;i++){
+          console.log(li[i].innerText)
+        }
+        
 
 
 
