@@ -86,6 +86,49 @@
         }
         
 
+        // accessing parentNode
+        var div = document.getElementById('main')
+        console.log(div.parentNode)
+        console.log(div.parentNode.parentNode)
+
+        // accesing parentElement
+        var Element1 = document.getElementById('main')
+        console.log(Element1.parentElement)
+        console.log(Element1.parentElement.parentNode)
+
+        // childNodes   'includes line breaks'
+        var items = document.getElementById('main')
+        console.log(items.childNodes)
+
+        // children    'only contains elements'
+        console.log(items.children)
+
+        // firstElementChild
+        console.log(items.firstElementChild)
+        items.firstElementChild.style.backgroundColor = 'pink'
+
+        // lastElementChild
+        console.log(items.lastElementChild)
+        items.lastElementChild.style.fontWeight = '800';
+
+        var ul = document.getElementById('items')
+        // nextSibling
+        console.log(ul.nextSibling);
+        console.log(ul.nextElementSibling);
+
+        // previousSibling
+        console.log(ul.previousSibling);
+        console.log(ul.previousSibling);
+
+      //  create new elements
+      var newDiv = document.createElement('div');
+      newDiv.style.backgroundColor = 'green';
+
+
+
+
+
+
 
 
   </script>
